@@ -1,0 +1,30 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Trigger deployment on push to the main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'  # Use Node.js version compatible with your Next.js version
+
+      - name: Install dependencies
+        run: yarn install  # or 'npm install' if you're using npm
+
+      - name: Build Next.js app
+        run: yarn build && yarn export  # Build and export the static site
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out  # This is where `next export` generates the static files
