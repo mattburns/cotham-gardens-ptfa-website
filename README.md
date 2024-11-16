@@ -6,5 +6,5 @@ Cotham Gardens School Streets
 ## Getting Started
 
 ```bash
-yarn start
+yarn dev
 ```
