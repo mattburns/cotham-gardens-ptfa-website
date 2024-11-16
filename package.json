@@ -9,7 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-react": "^7.25.9",
     "@heroicons/react": "^2.1.5",
+    "frontmatter-markdown-loader": "^3.7.0",
     "next": "^15.0.2",
     "react": "19.0.0-rc-02c0e824-20241028",
     "react-dom": "19.0.0-rc-02c0e824-20241028"
