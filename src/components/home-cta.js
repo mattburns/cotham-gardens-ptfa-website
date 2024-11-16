@@ -1,6 +1,9 @@
 import Image from 'next/image';
+import { attributes, react as HomeCTAContent } from '../content/home-cta.md';
 
 export default function HomeCTA () {
+  const { title } = attributes;
+
   return (
     <div className='bg-white'>
       <div className='mx-auto max-w-7xl sm:px-6 sm:py-8 lg:px-8'>
@@ -18,22 +21,19 @@ export default function HomeCTA () {
               </radialGradient>
             </defs>
           </svg>
-          <div className='mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left'>
+          <div className='mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-20 lg:text-left'>
             <h2 className='text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl'>
-              Join the conversation
+              {title}
             </h2>
-            <p className='mt-6 text-pretty text-lg/8 text-gray-300'>
-              We've created a WhatsApp community with seperate groups to discuss our various projects. Feel free to just listen in or join the conversation.
-            </p>
+            <div className='mt-6 text-pretty text-lg/8 text-gray-300'>
+              <HomeCTAContent />
+            </div>
             <div className='mt-10 flex items-center justify-center gap-x-6 lg:justify-start'>
               <a
                 href='https://chat.whatsapp.com/BqaqL5YOEEP3zsGpeJflAC'
                 className='rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white'
               >
-                Join the community
-              </a>
-              <a href='#' className='text-sm/6 font-semibold text-white'>
-                Learn more <span aria-hidden='true'>→</span>
+                {title}
               </a>
             </div>
           </div>
