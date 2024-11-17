@@ -1,7 +1,10 @@
 backend:
-  name: git-gateway
   # name: test-repo
+  name: github
+  repo: mattburns/cgschoolstreet
   branch: main
+
+
 media_folder: public/images
 public_folder: images
 collections:
@@ -10,21 +13,21 @@ collections:
     files:
     - label: "Home"
       name: "home"
-      file: "content/home.md"
+      file: "src/content/home.md"
       fields:
         - { label: "Title", name: "title", widget: "string"}
         - { label: "Publish Date", name: "date", widget: "datetime" }
         - { label: "Body", name: "body", widget: "markdown"}
-        - label: 'Cats'
-          name: "cats"
-          widget: list
-          fields:
-            - { label: "Name", name: "name", widget: "string"}
-            - { label: "Description", name: "description", widget: "text"}
-            - { label: "Body", name: "body", widget: "markdown"}
+    - label: "HomeCTA"
+      name: "homecta"
+      file: "src/content/home-cta.md"
+      fields:
+        - { label: "Title", name: "title", widget: "string"}
+        - { label: "Publish Date", name: "date", widget: "datetime" }
+        - { label: "Body", name: "body", widget: "markdown"}
     - label: "Links"
       name: "links"
-      file: "content/links.md"
+      file: "src/content/links.md"
       fields:
         - { label: "Title", name: "title", widget: "string"}
         - { label: "Publish Date", name: "date", widget: "datetime" }
@@ -35,3 +38,16 @@ collections:
           fields:
             - { label: "Name", name: "name", widget: "string"}
             - { label: "Url", name: "url", widget: "text"}
+    - label: "About"
+      name: "about"
+      file: "src/content/about.md"
+      fields:
+        - { label: "Title", name: "title", widget: "string"}
+        - { label: "Publish Date", name: "date", widget: "datetime" }
+        - { label: "Body", name: "body", widget: "markdown"}
+        - label: 'People'
+          name: "people"
+          widget: list
+          fields:
+            - { label: "Name", name: "name", widget: "string"}
+            - { label: "Bio", name: "bio", widget: "text"}
