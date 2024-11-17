@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: cgschoolstreet/mattburns.github.io
+  repo: mattburns/cgschoolstreet.github.io
   branch: main
 
 media_folder: public/images
