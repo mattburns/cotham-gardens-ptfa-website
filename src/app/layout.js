@@ -1,7 +1,6 @@
 import Menubar from '@/components/menubar';
 import localFont from 'next/font/local';
 import './globals.css';
-import Head from 'next/head';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -22,9 +21,9 @@ export const metadata = {
 export default function RootLayout ({ children }) {
   return (
     <html lang='en'>
-      <Head>
+      <head>
         <script src='https://identity.netlify.com/v1/netlify-identity-widget.js' />
-      </Head>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
