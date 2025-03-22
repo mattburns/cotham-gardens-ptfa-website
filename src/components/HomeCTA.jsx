@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { attributes, react as HomeCTAContent } from '../content/home-cta.md';
+import { attributes, react as HomeCTAContent } from '@/content/home-cta.md';
 
 export default function HomeCTA () {
   const { title } = attributes;

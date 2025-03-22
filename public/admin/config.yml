@@ -51,3 +51,9 @@ collections:
           fields:
             - { label: "Name", name: "name", widget: "string"}
             - { label: "Bio", name: "bio", widget: "text"}
+    - label: "Active Travel"
+      name: "activetravel"
+      file: "src/content/active-travel.md"
+      fields:
+        - { label: "Title", name: "title", widget: "string"}
+        - { label: "Body", name: "body", widget: "markdown"}

@@ -7,4 +7,4 @@ people:
   - name: Bob
     bio: Another bio here
 ---
-We're just parents and freinds of CG that believe the school run should be better
+We're just parents and freinds of CG
