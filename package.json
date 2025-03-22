@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "concurrently \"next dev\" \"sleep 2 && open http://localhost:3000/cotham-gardens-ptfa-website\"",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
+    "concurrently": "^9.1.2",
     "eslint": "^9.14.0",
     "eslint-config-next": "^15.0.2",
     "eslint-plugin-react": "^7.37.2",
