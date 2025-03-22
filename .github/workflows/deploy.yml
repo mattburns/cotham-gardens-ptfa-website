@@ -27,4 +27,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out/cothamgardenspfta  # This is where `next export` generates the static files
+          publish_dir: ./out/cotham-gardens-ptfa-website/  # This is where `next export` generates the static files

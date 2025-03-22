@@ -39,7 +39,7 @@ export default function HomeCTA () {
           </div>
           <div className='relative mt-16 h-80 lg:mt-8'>
             <Image
-              src='/cothamgardenspfta/images/pexels-thirdman-8926648.jpg'
+              src='/cotham-gardens-ptfa-website/images/pexels-thirdman-8926648.jpg'
               alt='Happy kids playing at school. credit: pexels 8926648'
               width={1200}
               height={800}

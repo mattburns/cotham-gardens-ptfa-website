@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 export default {
   output: 'export',
-  basePath: '/cothamgardenspfta',
-  distDir: 'out/cothamgardenspfta',
+  basePath: '/cotham-gardens-ptfa-website/',
+  distDir: 'out/cotham-gardens-ptfa-website/',
   trailingSlash: true,
   images: { unoptimized: true },
   webpack: (cfg) => {
