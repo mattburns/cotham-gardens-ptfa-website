@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 export default {
   output: 'export',
-  basePath: '/cgschoolstreet',
-  distDir: 'out/cgschoolstreet',
+  basePath: '/cothamgardenspfta',
+  distDir: 'out/cothamgardenspfta',
   trailingSlash: true,
   images: { unoptimized: true },
   webpack: (cfg) => {

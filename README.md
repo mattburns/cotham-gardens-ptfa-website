@@ -1,7 +1,6 @@
-# cgschoolstreet
+# cotham-gardens-pfta-website
 
-Cotham Gardens School Streets
-
+Cotham Gardens PFTA
 
 ## Getting Started
 
