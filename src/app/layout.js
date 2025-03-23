@@ -25,7 +25,7 @@ export default function RootLayout ({ children }) {
         <script src='https://identity.netlify.com/v1/netlify-identity-widget.js' />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-100`}
       >
         <HeaderNav />
         {children}
