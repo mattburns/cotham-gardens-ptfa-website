@@ -18,7 +18,7 @@ export default function HeaderNav () {
         <div className='relative flex h-16 items-center justify-between'>
           <div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
             {/* Mobile menu button */}
-            <DisclosureButton className='group relative inline-flex items-center justify-center rounded-md p-2 hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'>
+            <DisclosureButton className='text-gray-100 group relative inline-flex items-center justify-center rounded-md p-2 hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'>
               <span className='absolute -inset-0.5' />
               <span className='sr-only'>Open main menu</span>
               <Bars3Icon aria-hidden='true' className='block size-6 group-data-[open]:hidden' />
@@ -58,7 +58,7 @@ export default function HeaderNav () {
           {navigation.map((item) => (
             <Link
               key={item.name}
-              href={item.href} className='hover:bg-pink-500 block rounded-md px-3 py-2 text-sm font-medium'
+              href={item.href} className='text-gray-100 hover:bg-pink-500 block rounded-md px-3 py-2 text-sm font-medium'
 
             >{item.name}
             </Link>
