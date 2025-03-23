@@ -1,5 +1,6 @@
 {
   "name": "cotham-gardens-pfta-website",
+  "type": "module",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -21,9 +22,11 @@
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "concurrently": "^9.1.2",
-    "eslint": "^9.14.0",
-    "eslint-config-next": "^15.0.2",
+    "eslint": "^9.23.0",
+    "eslint-config-next": "^15.2.3",
     "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "eslint-plugin-tailwindcss": "^3.18.0",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "tailwindcss-font-inter": "^4.0.0"
