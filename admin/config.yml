@@ -18,9 +18,9 @@ collections:
         - { label: "Title", name: "title", widget: "string"}
         - { label: "Publish Date", name: "date", widget: "datetime" }
         - { label: "Body", name: "body", widget: "markdown"}
-    - label: "HomeCTA"
-      name: "homecta"
-      file: "src/content/home-cta.md"
+    - label: "ActiveTravelCTA"
+      name: "activetravelcta"
+      file: "src/content/active-travel-cta.md"
       fields:
         - { label: "Title", name: "title", widget: "string"}
         - { label: "Publish Date", name: "date", widget: "datetime" }
