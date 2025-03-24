@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import { attributes, react as HomeCTAContent } from '@/content/home-cta.md';
+import { attributes, react as ActiveTravelCTAContent } from '@/content/active-travel-cta.md';
 
-export default function HomeCTA () {
+export default function ActiveTravelCTA () {
   const { title } = attributes;
 
   return (
@@ -26,7 +26,7 @@ export default function HomeCTA () {
               {title}
             </h2>
             <div className='mt-6 text-pretty text-lg/8 text-gray-300'>
-              <HomeCTAContent />
+              <ActiveTravelCTAContent />
             </div>
             <div className='mt-10 flex items-center justify-center gap-x-6 lg:justify-start'>
               <a

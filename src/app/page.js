@@ -1,7 +1,5 @@
 import { attributes, react as HomeContent } from '@/content/home.md';
 
-import HomeCTA from '@/components/HomeCTA';
-
 export default function Page () {
   const { title } = attributes;
 
@@ -17,7 +15,6 @@ export default function Page () {
           </div>
         </div>
       </div>
-      <HomeCTA />
     </div>
   );
 }
