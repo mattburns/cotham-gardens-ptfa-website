@@ -4,7 +4,8 @@ import Link from 'next/link';
 
 const navigation = [
   { name: 'Active Travel', href: '/activetravel' },
-  { name: 'About', href: '/about' }
+  { name: 'About', href: '/about' },
+  { name: 'News', href: '/news' }
 ];
 
 function classNames (...classes) {

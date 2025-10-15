@@ -4,8 +4,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"next dev\" \"sleep 2 && open http://localhost:3000/cotham-gardens-ptfa-website\"",
-    "build": "next build",
+    "dev": "npm run generate:news && concurrently \"next dev\" \"sleep 2 && open http://localhost:3000/cotham-gardens-ptfa-website\"",
+    "generate:news": "node scripts/generate-news-posts.js",
+    "build": "npm run generate:news && next build",
     "start": "next start",
     "lint": "next lint"
   },

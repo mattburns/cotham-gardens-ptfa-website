@@ -1,12 +1,18 @@
+local_backend: true
+
+publish_mode: editorial_workflow
+
 backend:
   # name: test-repo
   name: github
+  squash_merges: true
   repo: mattburns/cotham-gardens-ptfa-website
   branch: main
 
 
 media_folder: public/images
 public_folder: images
+
 collections:
   - name: "main-pages"
     label: "Main Pages"
@@ -50,3 +56,12 @@ collections:
           fields:
             - { label: "Name", name: "name", widget: "string"}
             - { label: "Url", name: "url", widget: "text"}
+  - label: "News"
+    name: "news"
+    folder: "src/content/_posts/news"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image", public_folder: "/cotham-gardens-ptfa-website/images"}
+      - {label: "Body", name: "body", widget: "markdown"}
